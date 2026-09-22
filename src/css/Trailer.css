@@ -1,0 +1,61 @@
+.trailer-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.trailer-dialog {
+  position: relative;
+  width: min(900px, 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  background: #18181b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.5);
+}
+
+.trailer-dialog h2 {
+  margin-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.trailer-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  color: white;
+  background: #333;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.trailer-frame {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.trailer-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.trailer-status {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  .trailer-dialog {
+    padding: 1rem;
+  }
+}
